@@ -15,8 +15,6 @@ return require('packer').startup(function(use)
   use 'sheerun/vim-polyglot'                                              -- Better code colors
   use 'folke/tokyonight.nvim'
 
-  use 'lilydjwg/colorizer'                                                -- Color Highlight
-
   -- use 'Valloric/MatchTagAlways'
   use 'leafOfTree/vim-matchtag'
 
