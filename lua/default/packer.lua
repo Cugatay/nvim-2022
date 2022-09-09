@@ -10,6 +10,12 @@ return require('packer').startup(function(use)
   -- use 'ap/vim-buftabline'                                                 -- Buffers
   use 'qpkorr/vim-bufkill'
 
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.0',
+  -- or                            , branch = '0.1.x',
+    requires = { {'nvim-lua/plenary.nvim', 'BurntSushi/ripgrep'} }
+  }
+
   use 'mg979/vim-visual-multi'                                            -- Multi cursor
   
   use 'sheerun/vim-polyglot'                                              -- Better code colors
@@ -21,10 +27,6 @@ return require('packer').startup(function(use)
   use 'preservim/nerdcommenter'                                           -- Comment out
 
   use 'ryanoasis/vim-devicons'                                            -- Icons
-
-  use 'junegunn/fzf.vim'                                                  -- F l    e r h
-  use { 'junegunn/fzf', run = function() vim.fn['fzf#install'](0) end }   --  i e  S a c
-  use 'yuki-yano/fzf-preview.vim'                                         -- Preview for file search
 
   use 'preservim/nerdtree'                                                -- NERDTree
 

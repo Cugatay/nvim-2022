@@ -18,10 +18,10 @@ vim.cmd("noremap <S-tab> <cmd>bp<CR>")
 vim.cmd("noremap <C-w> <cmd>BD<CR>")
 
 -- NERDTree Toggle
-vim.cmd("noremap <C-b> <cmd>NERDTreeFind<CR>")
+vim.cmd("noremap <C-b> <cmd>NERDTreeToggle<CR> <cmd>wincmd l<CR>")
 
 -- NERDTree Find File's Location
--- vim.cmd("noremap <C-e> <cmd>NERDTreeFind<CR> <cmd>wincmd l<CR>")
+-- vim.cmd("noremap <C-b> <cmd>NERDTreeFind<CR> <cmd>wincmd l<CR>")
 
 -- See all buffers
 vim.cmd("noremap <C-t> <cmd>Buffers<CR>")
@@ -39,6 +39,5 @@ vim.cmd("noremap <C-c> <cmd>Gitsigns preview_hunk<CR>")  -- Little
 vim.cmd("noremap <C-x> <cmd>Gdiffsplit<CR>")             -- Whole split
 
 -- Fuzzy Finder
-vim.cmd("noremap <C-p> <cmd>Files<CR>")
-vim.cmd("noremap <C-g> <cmd>GitFiles<CR>")
-vim.cmd("noremap <C-f> <cmd>Ag<CR>")
+vim.cmd("noremap <C-p> <cmd>Telescope find_files<CR>")
+vim.cmd("noremap <C-f> <cmd>Telescope live_grep<CR>")
