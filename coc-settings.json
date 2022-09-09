@@ -2,6 +2,7 @@
   "diagnostic.checkCurrentLine": true,
   "eslint.autoFixOnSave": true,
   "suggest.noselect": false,
+  "prettier.enable": false,
   "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
     "typescript",

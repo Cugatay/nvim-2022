@@ -13,7 +13,7 @@ vim.cmd("autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists(
 vim.cmd("let NERDTreeShowHidden=1")
 
 -- Find File in NERDTree
-vim.cmd("autocmd BufEnter * if &modifiable && g:NERDTree.IsOpen() | silent! NERDTreeFind % | wincmd l | endif")
+-- vim.cmd("autocmd BufEnter * if &modifiable && g:NERDTree.IsOpen() | silent! NERDTreeFind % | wincmd l | endif")
 
 --vim.cmd([[
 --" If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
