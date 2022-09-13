@@ -12,7 +12,6 @@ return require('packer').startup(function(use)
 
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
-  -- or                            , branch = '0.1.x',
     requires = { {'nvim-lua/plenary.nvim', 'BurntSushi/ripgrep'} }
   }
 
@@ -26,9 +25,10 @@ return require('packer').startup(function(use)
 
   use 'preservim/nerdcommenter'                                           -- Comment out
 
-  use 'ryanoasis/vim-devicons'                                            -- Icons
+  -- use 'ryanoasis/vim-devicons'                                            -- Icons
+  use 'kyazdani42/nvim-web-devicons'
 
-  use 'preservim/nerdtree'                                                -- NERDTree
+  -- use 'preservim/nerdtree'                                                -- NERDTree
 
   use {'lewis6991/gitsigns.nvim',                                         -- See git changes on left of the file
     config = function()
@@ -36,7 +36,7 @@ return require('packer').startup(function(use)
     end
   }
   use 'tpope/vim-fugitive'                                                -- See git workflows
-  use 'Xuyuanp/nerdtree-git-plugin'                                       -- See changed files on NERDTree
+  -- use 'Xuyuanp/nerdtree-git-plugin'                                       -- See changed files on NERDTree
   use 'APZelos/blamer.nvim'                                               -- See the editor of the line
 
   use { 'neoclide/coc.nvim', branch = 'release' }                         -- IntelliSense

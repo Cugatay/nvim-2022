@@ -18,7 +18,8 @@ vim.cmd("noremap <S-tab> <cmd>bp<CR>")
 vim.cmd("noremap <C-w> <cmd>BD<CR>")
 
 -- NERDTree Toggle
-vim.cmd("noremap <C-b> <cmd>NERDTreeToggle<CR> <cmd>wincmd l<CR>")
+-- vim.cmd("noremap <C-b> <cmd>NERDTreeToggle<CR> <cmd>wincmd l<CR>")
+vim.cmd("noremap <C-b> <cmd>Ex<CR>")
 
 -- NERDTree Find File's Location
 -- vim.cmd("noremap <C-b> <cmd>NERDTreeFind<CR> <cmd>wincmd l<CR>")

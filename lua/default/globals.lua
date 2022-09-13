@@ -19,9 +19,9 @@ endfunction
 
 vim.cmd([[
 function SaveSession()
-  if g:NERDTree.IsOpen()
-    call CloseSafely()
-  endif
+  " if g:NERDTree.IsOpen()
+  "   call CloseSafely()
+  " endif
   ! mkdir -p ~/.vim-sessions`pwd`
   mks! ~/.vim-sessions`pwd`/session.vim
   quit
